@@ -1,0 +1,162 @@
+{
+  "niacinamide": {
+    "comedogenic": 0,
+    "goodFor": ["acne", "oily", "pigmentation"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Controls oil, reduces acne, improves skin tone"
+  },
+  "salicylic acid": {
+    "comedogenic": 0,
+    "goodFor": ["acne", "oily"],
+    "avoidFor": ["dry", "sensitive"],
+    "irritationRisk": "medium",
+    "rednessTrigger": true,
+    "description": "Exfoliates pores and treats acne"
+  },
+  "hyaluronic acid": {
+    "comedogenic": 0,
+    "goodFor": ["dry", "sensitive"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Hydrates and plumps skin"
+  },
+  "glycerin": {
+    "comedogenic": 0,
+    "goodFor": ["dry", "sensitive"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Humectant that attracts moisture"
+  },
+  "coconut oil": {
+    "comedogenic": 4,
+    "goodFor": ["dry"],
+    "avoidFor": ["acne", "oily"],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Moisturizing but may clog pores"
+  },
+  "ethylhexyl palmitate": {
+    "comedogenic": 4,
+    "goodFor": ["dry"],
+    "avoidFor": ["acne"],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Emollient, can clog pores"
+  },
+  "fragrance": {
+    "comedogenic": 1,
+    "goodFor": [],
+    "avoidFor": ["sensitive"],
+    "irritationRisk": "high",
+    "rednessTrigger": true,
+    "description": "Common irritant causing redness"
+  },
+  "parfum": {
+    "comedogenic": 1,
+    "goodFor": [],
+    "avoidFor": ["sensitive"],
+    "irritationRisk": "high",
+    "rednessTrigger": true,
+    "description": "Same as fragrance, can irritate skin"
+  },
+  "alcohol": {
+    "comedogenic": 0,
+    "goodFor": ["oily"],
+    "avoidFor": ["dry", "sensitive"],
+    "irritationRisk": "high",
+    "rednessTrigger": true,
+    "description": "Can dry and irritate skin"
+  },
+  "cetyl alcohol": {
+    "comedogenic": 2,
+    "goodFor": ["dry"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Fatty alcohol, safe and moisturizing"
+  },
+  "stearyl alcohol": {
+    "comedogenic": 2,
+    "goodFor": ["dry"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Fatty alcohol, not irritating"
+  },
+  "dimethicone": {
+    "comedogenic": 1,
+    "goodFor": ["dry", "sensitive"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Silicone that smooths and protects skin"
+  },
+  "zinc oxide": {
+    "comedogenic": 0,
+    "goodFor": ["acne", "sensitive"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Soothing and anti-inflammatory"
+  },
+  "titanium dioxide": {
+    "comedogenic": 1,
+    "goodFor": ["sensitive"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Physical sunscreen filter"
+  },
+  "tea tree oil": {
+    "comedogenic": 1,
+    "goodFor": ["acne"],
+    "avoidFor": ["sensitive"],
+    "irritationRisk": "high",
+    "rednessTrigger": true,
+    "description": "Antibacterial but can irritate"
+  },
+  "centella asiatica": {
+    "comedogenic": 0,
+    "goodFor": ["sensitive", "redness"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Soothes and calms irritated skin"
+  },
+  "aloe vera": {
+    "comedogenic": 0,
+    "goodFor": ["sensitive"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Calming and hydrating"
+  },
+  "glycolic acid": {
+    "comedogenic": 0,
+    "goodFor": ["dull", "pigmentation"],
+    "avoidFor": ["sensitive"],
+    "irritationRisk": "high",
+    "rednessTrigger": true,
+    "description": "Exfoliates and brightens skin"
+  },
+  "lactic acid": {
+    "comedogenic": 0,
+    "goodFor": ["dry"],
+    "avoidFor": ["sensitive"],
+    "irritationRisk": "medium",
+    "rednessTrigger": true,
+    "description": "Gentler exfoliating acid"
+  },
+  "urea": {
+    "comedogenic": 0,
+    "goodFor": ["dry"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Hydrating and mildly exfoliating"
+  }
+}
