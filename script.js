@@ -4,69 +4,53 @@ fetch("ingredients.json")
     .then(response => response.json())
     .then(data => {
         ingredientsDB = data;
-        console.log("DATA LOADED:", data);
-    })
-    .catch(error => {
-        console.log("ERROR:", error);
     });
 
-function analyzeIngredients() {
+async function getAIAnalysis(ingredient) {
+    let lower = ingredient.toLowerCase();
 
-    if (Object.keys(ingredientsDB).length === 0) {
-        alert("Data still loading");
-        return;
+    if (lower.includes("oil")) {
+        return "May clog pores, not ideal for acne-prone skin.";
+    } 
+    else if (lower.includes("acid")) {
+        return "Exfoliating ingredient, may irritate sensitive skin.";
+    } 
+    else {
+        return "No data available. Check before use.";
     }
+}
 
-    let input = document.getElementById("ingredients").value.toLowerCase();
-    let skinType = document.getElementById("skinType").value;
+async function analyzeIngredients() {
+
+    let input = document.getElementById("ingredients").value;
+    let items = input.split(",");
+
     let result = "";
 
-    let inputIngredients = input.split(",");
-
-    inputIngredients.forEach(item => {
-
-        let cleanItem = item.trim();
+    for (let item of items) {
+        let cleanItem = item.trim().toLowerCase();
 
         if (ingredientsDB[cleanItem]) {
-
             let data = ingredientsDB[cleanItem];
-
-            let tag = "";
-            let className = "";
-
-            if (data.avoidFor.includes(skinType)) {
-                tag = "❌ Not suitable";
-                className = "danger";
-            } else if (data.goodFor.includes(skinType)) {
-                tag = "✅ Good";
-                className = "safe";
-            } else {
-                tag = "⚠️ Neutral";
-                className = "caution";
-            }
 
             result += `
             <div class="result-box">
                 <b>${cleanItem}</b><br>
-                <span class="${className}">${tag}</span><br>
                 Comedogenic: ${data.comedogenic}/5 <br>
                 Irritation: ${data.irritationRisk} <br>
                 ${data.description}
             </div>
             `;
-
         } else {
+            let aiText = await getAIAnalysis(cleanItem);
+
             result += `
             <div class="result-box">
-                <b>${cleanItem}</b><br>
-                ⚠️ No data available
+                <b>${cleanItem} (AI)</b><br>
+                ${aiText}
             </div>
             `;
         }
-    });
-
-    if (result === "") {
-        result = "No matching ingredients found";
     }
 
     document.getElementById("result").innerHTML = result;
