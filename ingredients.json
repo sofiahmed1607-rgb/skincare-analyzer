@@ -158,5 +158,1123 @@
     "irritationRisk": "low",
     "rednessTrigger": false,
     "description": "Hydrating and mildly exfoliating"
+  },
+  "butylene glycol": {
+    "comedogenic": 1,
+    "goodFor": ["dry", "oily"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Humectant that improves hydration and absorption"
+  },
+  "propanediol": {
+    "comedogenic": 0,
+    "goodFor": ["dry", "sensitive"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Hydrating solvent and penetration enhancer"
+  },
+  "panthenol": {
+    "comedogenic": 0,
+    "goodFor": ["dry", "sensitive"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Pro-vitamin B5, soothing and hydrating"
+  },
+  "allantoin": {
+    "comedogenic": 0,
+    "goodFor": ["sensitive"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Calms irritation and promotes healing"
+  },
+  "ceramide": {
+    "comedogenic": 0,
+    "goodFor": ["dry", "sensitive"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Strengthens skin barrier and retains moisture"
+  },
+  "cholesterol": {
+    "comedogenic": 2,
+    "goodFor": ["dry"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Supports skin barrier repair"
+  },
+  "squalane": {
+    "comedogenic": 1,
+    "goodFor": ["dry", "sensitive"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Lightweight moisturizing oil"
+  },
+  "caprylic triglyceride": {
+    "comedogenic": 2,
+    "goodFor": ["dry"],
+    "avoidFor": ["acne"],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Emollient derived from coconut oil"
+  },
+  "cetearyl alcohol": {
+    "comedogenic": 2,
+    "goodFor": ["dry"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Fatty alcohol, moisturizing and safe"
+  },
+  "behenyl alcohol": {
+    "comedogenic": 2,
+    "goodFor": ["dry"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Fatty alcohol used as thickener"
+  },
+  "isopropyl myristate": {
+    "comedogenic": 5,
+    "goodFor": ["dry"],
+    "avoidFor": ["acne", "oily"],
+    "irritationRisk": "medium",
+    "rednessTrigger": false,
+    "description": "Highly comedogenic emollient"
+  },
+  "peg-100 stearate": {
+    "comedogenic": 1,
+    "goodFor": ["all"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Emulsifier that blends oil and water"
+  },
+  "glyceryl stearate": {
+    "comedogenic": 3,
+    "goodFor": ["dry"],
+    "avoidFor": ["acne"],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Emollient and emulsifier"
+  },
+  "sodium hyaluronate": {
+    "comedogenic": 0,
+    "goodFor": ["dry", "sensitive"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Form of hyaluronic acid for hydration"
+  },
+  "betaine": {
+    "comedogenic": 0,
+    "goodFor": ["sensitive"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Hydrating and soothing agent"
+  },
+  "cocamidopropyl betaine": {
+    "comedogenic": 1,
+    "goodFor": ["oily"],
+    "avoidFor": ["sensitive"],
+    "irritationRisk": "medium",
+    "rednessTrigger": true,
+    "description": "Mild surfactant used in cleansers"
+  },
+  "sodium laureth sulfate": {
+    "comedogenic": 1,
+    "goodFor": ["oily"],
+    "avoidFor": ["sensitive", "dry"],
+    "irritationRisk": "high",
+    "rednessTrigger": true,
+    "description": "Strong cleansing agent that may irritate"
+  },
+  "sodium lauryl sulfate": {
+    "comedogenic": 1,
+    "goodFor": ["oily"],
+    "avoidFor": ["sensitive"],
+    "irritationRisk": "high",
+    "rednessTrigger": true,
+    "description": "Harsh cleanser that can strip skin"
+  },
+  "phenoxyethanol": {
+    "comedogenic": 0,
+    "goodFor": ["all"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Common preservative in cosmetics"
+  },
+  "ethylhexylglycerin": {
+    "comedogenic": 1,
+    "goodFor": ["all"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Preservative booster and skin conditioner"
+  },
+  "disodium edta": {
+    "comedogenic": 0,
+    "goodFor": ["all"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Stabilizes product formulation"
+  },
+  "carbomer": {
+    "comedogenic": 0,
+    "goodFor": ["all"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Thickening agent"
+  },
+  "tromethamine": {
+    "comedogenic": 0,
+    "goodFor": ["all"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "pH adjuster"
+  },
+  "triethanolamine": {
+    "comedogenic": 2,
+    "goodFor": ["all"],
+    "avoidFor": ["sensitive"],
+    "irritationRisk": "medium",
+    "rednessTrigger": true,
+    "description": "pH adjuster that may irritate"
+  },
+  "sodium chloride": {
+    "comedogenic": 0,
+    "goodFor": ["all"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Salt used as thickener in skincare"
+  },
+  "potassium sorbate": {
+    "comedogenic": 0,
+    "goodFor": ["all"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Preservative that prevents mold growth"
+  },
+  "sodium benzoate": {
+    "comedogenic": 0,
+    "goodFor": ["all"],
+    "avoidFor": ["sensitive"],
+    "irritationRisk": "medium",
+    "rednessTrigger": true,
+    "description": "Common preservative, may irritate sensitive skin"
+  },
+  "caprylyl glycol": {
+    "comedogenic": 1,
+    "goodFor": ["all"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Moisturizing agent with antimicrobial properties"
+  },
+  "hexylene glycol": {
+    "comedogenic": 1,
+    "goodFor": ["all"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Solvent that enhances absorption"
+  },
+  "peg-40 hydrogenated castor oil": {
+    "comedogenic": 3,
+    "goodFor": ["dry"],
+    "avoidFor": ["acne"],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Emulsifier derived from castor oil"
+  },
+  "hydrogenated polydecene": {
+    "comedogenic": 1,
+    "goodFor": ["dry"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Lightweight emollient"
+  },
+  "polyquaternium-10": {
+    "comedogenic": 0,
+    "goodFor": ["all"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Conditioning polymer"
+  },
+  "polyquaternium-7": {
+    "comedogenic": 0,
+    "goodFor": ["all"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Film-forming conditioning agent"
+  },
+  "acrylates copolymer": {
+    "comedogenic": 0,
+    "goodFor": ["all"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Stabilizes formulation"
+  },
+  "xanthan gum": {
+    "comedogenic": 0,
+    "goodFor": ["all"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Natural thickener"
+  },
+  "guar gum": {
+    "comedogenic": 0,
+    "goodFor": ["all"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Plant-based thickener"
+  },
+  "lecithin": {
+    "comedogenic": 2,
+    "goodFor": ["dry"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Skin-conditioning phospholipid"
+  },
+  "tocopherol": {
+    "comedogenic": 2,
+    "goodFor": ["dry"],
+    "avoidFor": ["acne"],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Vitamin E antioxidant"
+  },
+  "ascorbic acid": {
+    "comedogenic": 0,
+    "goodFor": ["pigmentation"],
+    "avoidFor": ["sensitive"],
+    "irritationRisk": "high",
+    "rednessTrigger": true,
+    "description": "Vitamin C for brightening"
+  },
+  "magnesium ascorbyl phosphate": {
+    "comedogenic": 0,
+    "goodFor": ["pigmentation"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Stable vitamin C derivative"
+  },
+  "retinol": {
+    "comedogenic": 0,
+    "goodFor": ["acne", "aging"],
+    "avoidFor": ["sensitive"],
+    "irritationRisk": "high",
+    "rednessTrigger": true,
+    "description": "Vitamin A derivative for anti-aging"
+  },
+  "camellia sinensis leaf extract": {
+    "comedogenic": 0,
+    "goodFor": ["acne", "sensitive"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Green tea extract with antioxidant properties"
+  },
+  "centella asiatica extract": {
+    "comedogenic": 0,
+    "goodFor": ["sensitive", "redness"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Soothing and healing plant extract"
+  },
+  "chamomile extract": {
+    "comedogenic": 0,
+    "goodFor": ["sensitive"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Calming botanical extract"
+  },
+  "licorice root extract": {
+    "comedogenic": 0,
+    "goodFor": ["pigmentation"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Brightens and reduces dark spots"
+  },
+  "mulberry extract": {
+    "comedogenic": 0,
+    "goodFor": ["pigmentation"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Skin brightening plant extract"
+  },
+  "willow bark extract": {
+    "comedogenic": 0,
+    "goodFor": ["acne"],
+    "avoidFor": ["sensitive"],
+    "irritationRisk": "medium",
+    "rednessTrigger": true,
+    "description": "Natural source of salicylic acid"
+  },
+  "hamamelis virginiana extract": {
+    "comedogenic": 0,
+    "goodFor": ["oily"],
+    "avoidFor": ["sensitive"],
+    "irritationRisk": "medium",
+    "rednessTrigger": true,
+    "description": "Witch hazel, tightens pores"
+  },
+  "rosemary extract": {
+    "comedogenic": 1,
+    "goodFor": ["oily"],
+    "avoidFor": ["sensitive"],
+    "irritationRisk": "medium",
+    "rednessTrigger": true,
+    "description": "Antioxidant but can irritate"
+  },
+  "lavender oil": {
+    "comedogenic": 2,
+    "goodFor": ["dry"],
+    "avoidFor": ["sensitive"],
+    "irritationRisk": "high",
+    "rednessTrigger": true,
+    "description": "Fragrant oil that may irritate skin"
+  },
+  "peppermint oil": {
+    "comedogenic": 2,
+    "goodFor": ["oily"],
+    "avoidFor": ["sensitive"],
+    "irritationRisk": "high",
+    "rednessTrigger": true,
+    "description": "Cooling effect but irritating"
+  },
+  "eucalyptus oil": {
+    "comedogenic": 2,
+    "goodFor": ["oily"],
+    "avoidFor": ["sensitive"],
+    "irritationRisk": "high",
+    "rednessTrigger": true,
+    "description": "Antimicrobial but harsh"
+  },
+  "jojoba oil": {
+    "comedogenic": 2,
+    "goodFor": ["dry", "acne"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Balances oil production"
+  },
+  "argan oil": {
+    "comedogenic": 0,
+    "goodFor": ["dry"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Nourishing oil rich in fatty acids"
+  },
+  "rosehip oil": {
+    "comedogenic": 1,
+    "goodFor": ["acne", "pigmentation"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Improves scars and skin tone"
+  },
+  "shea butter": {
+    "comedogenic": 2,
+    "goodFor": ["dry"],
+    "avoidFor": ["acne"],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Rich moisturizing butter"
+  },
+  "cocoa butter": {
+    "comedogenic": 4,
+    "goodFor": ["dry"],
+    "avoidFor": ["acne"],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Highly comedogenic moisturizer"
+  },
+  "beeswax": {
+    "comedogenic": 2,
+    "goodFor": ["dry"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Forms protective barrier"
+  },
+  "lanolin": {
+    "comedogenic": 4,
+    "goodFor": ["dry"],
+    "avoidFor": ["acne"],
+    "irritationRisk": "medium",
+    "rednessTrigger": true,
+    "description": "Moisturizing but can clog pores"
+  },
+  "azelaic acid": {
+    "comedogenic": 0,
+    "goodFor": ["acne", "pigmentation"],
+    "avoidFor": [],
+    "irritationRisk": "medium",
+    "rednessTrigger": true,
+    "description": "Treats acne and reduces pigmentation"
+  },
+  "mandelic acid": {
+    "comedogenic": 0,
+    "goodFor": ["acne"],
+    "avoidFor": ["sensitive"],
+    "irritationRisk": "medium",
+    "rednessTrigger": true,
+    "description": "Gentle exfoliating AHA"
+  },
+  "phytic acid": {
+    "comedogenic": 0,
+    "goodFor": ["pigmentation"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Mild exfoliant and antioxidant"
+  },
+  "gluconolactone": {
+    "comedogenic": 0,
+    "goodFor": ["sensitive"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "PHA that gently exfoliates"
+  },
+  "lactobionic acid": {
+    "comedogenic": 0,
+    "goodFor": ["sensitive"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Hydrating exfoliant"
+  },
+  "salix alba bark extract": {
+    "comedogenic": 0,
+    "goodFor": ["acne"],
+    "avoidFor": ["sensitive"],
+    "irritationRisk": "medium",
+    "rednessTrigger": true,
+    "description": "Natural BHA source"
+  },
+  "aloe barbadensis leaf juice": {
+    "comedogenic": 0,
+    "goodFor": ["sensitive"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Soothing and hydrating"
+  },
+  "cucumber extract": {
+    "comedogenic": 0,
+    "goodFor": ["sensitive"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Cooling and calming extract"
+  },
+  "papaya extract": {
+    "comedogenic": 0,
+    "goodFor": ["dull"],
+    "avoidFor": ["sensitive"],
+    "irritationRisk": "medium",
+    "rednessTrigger": true,
+    "description": "Contains enzymes for exfoliation"
+  },
+  "pineapple extract": {
+    "comedogenic": 0,
+    "goodFor": ["dull"],
+    "avoidFor": ["sensitive"],
+    "irritationRisk": "medium",
+    "rednessTrigger": true,
+    "description": "Enzyme exfoliant"
+  },
+  "apple extract": {
+    "comedogenic": 0,
+    "goodFor": ["dull"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Antioxidant-rich fruit extract"
+  },
+  "grape seed extract": {
+    "comedogenic": 1,
+    "goodFor": ["acne"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Light antioxidant oil"
+  },
+  "green tea extract": {
+    "comedogenic": 0,
+    "goodFor": ["acne"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Anti-inflammatory antioxidant"
+  },
+  "ferulic acid": {
+    "comedogenic": 0,
+    "goodFor": ["aging"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Boosts antioxidant protection"
+  },
+  "resveratrol": {
+    "comedogenic": 0,
+    "goodFor": ["aging"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Powerful antioxidant"
+  },
+  "coenzyme q10": {
+    "comedogenic": 1,
+    "goodFor": ["aging"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Supports skin energy and repair"
+  },
+  "peptides": {
+    "comedogenic": 0,
+    "goodFor": ["aging"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Helps in collagen production"
+  },
+  "collagen": {
+    "comedogenic": 0,
+    "goodFor": ["dry"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Hydrating protein"
+  },
+  "dimethiconol": {
+    "comedogenic": 1,
+    "goodFor": ["dry", "sensitive"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Silicone that smooths and protects skin"
+  },
+  "cyclopentasiloxane": {
+    "comedogenic": 1,
+    "goodFor": ["all"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Lightweight silicone that evaporates quickly"
+  },
+  "cyclohexasiloxane": {
+    "comedogenic": 1,
+    "goodFor": ["all"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Silicone that gives silky texture"
+  },
+  "trimethicone": {
+    "comedogenic": 1,
+    "goodFor": ["all"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Conditioning silicone"
+  },
+  "peg-10 dimethicone": {
+    "comedogenic": 1,
+    "goodFor": ["all"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Silicone-based emulsifier"
+  },
+  "sorbitan stearate": {
+    "comedogenic": 2,
+    "goodFor": ["dry"],
+    "avoidFor": ["acne"],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Emulsifier that blends oil and water"
+  },
+  "polysorbate 20": {
+    "comedogenic": 1,
+    "goodFor": ["all"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Mild emulsifier"
+  },
+  "polysorbate 60": {
+    "comedogenic": 2,
+    "goodFor": ["dry"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Emulsifier for creams"
+  },
+  "polysorbate 80": {
+    "comedogenic": 3,
+    "goodFor": ["dry"],
+    "avoidFor": ["acne"],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Heavier emulsifier"
+  },
+  "ceteareth-20": {
+    "comedogenic": 2,
+    "goodFor": ["dry"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Emulsifier and surfactant"
+  },
+  "ceteareth-12": {
+    "comedogenic": 2,
+    "goodFor": ["dry"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Stabilizes emulsions"
+  },
+  "sodium cetearyl sulfate": {
+    "comedogenic": 1,
+    "goodFor": ["oily"],
+    "avoidFor": ["sensitive"],
+    "irritationRisk": "medium",
+    "rednessTrigger": true,
+    "description": "Cleansing and emulsifying agent"
+  },
+  "glyceryl caprylate": {
+    "comedogenic": 1,
+    "goodFor": ["all"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Emollient and preservative booster"
+  },
+  "glyceryl oleate": {
+    "comedogenic": 3,
+    "goodFor": ["dry"],
+    "avoidFor": ["acne"],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Skin conditioning agent"
+  },
+  "glyceryl laurate": {
+    "comedogenic": 3,
+    "goodFor": ["dry"],
+    "avoidFor": ["acne"],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Emollient derived from fatty acids"
+  },
+  "stearic acid": {
+    "comedogenic": 2,
+    "goodFor": ["dry"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Fatty acid used as thickener"
+  },
+  "palmitic acid": {
+    "comedogenic": 2,
+    "goodFor": ["dry"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Fatty acid that softens skin"
+  },
+  "oleic acid": {
+    "comedogenic": 3,
+    "goodFor": ["dry"],
+    "avoidFor": ["acne"],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Moisturizing fatty acid"
+  },
+  "benzyl alcohol": {
+    "comedogenic": 1,
+    "goodFor": ["all"],
+    "avoidFor": ["sensitive"],
+    "irritationRisk": "medium",
+    "rednessTrigger": true,
+    "description": "Preservative and solvent that may irritate sensitive skin"
+  },
+  "dehydroacetic acid": {
+    "comedogenic": 0,
+    "goodFor": ["all"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Mild preservative"
+  },
+  "chlorphenesin": {
+    "comedogenic": 0,
+    "goodFor": ["all"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Preservative used in cosmetics"
+  },
+  "imidazolidinyl urea": {
+    "comedogenic": 0,
+    "goodFor": ["all"],
+    "avoidFor": ["sensitive"],
+    "irritationRisk": "medium",
+    "rednessTrigger": true,
+    "description": "Preservative that releases formaldehyde"
+  },
+  "diazolidinyl urea": {
+    "comedogenic": 0,
+    "goodFor": ["all"],
+    "avoidFor": ["sensitive"],
+    "irritationRisk": "medium",
+    "rednessTrigger": true,
+    "description": "Formaldehyde-releasing preservative"
+  },
+  "dmdm hydantoin": {
+    "comedogenic": 0,
+    "goodFor": ["all"],
+    "avoidFor": ["sensitive"],
+    "irritationRisk": "high",
+    "rednessTrigger": true,
+    "description": "Preservative that may cause irritation"
+  },
+  "iodopropynyl butylcarbamate": {
+    "comedogenic": 0,
+    "goodFor": ["all"],
+    "avoidFor": ["sensitive"],
+    "irritationRisk": "medium",
+    "rednessTrigger": true,
+    "description": "Preservative with potential irritation"
+  },
+  "methylparaben": {
+    "comedogenic": 0,
+    "goodFor": ["all"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Common preservative"
+  },
+  "propylparaben": {
+    "comedogenic": 0,
+    "goodFor": ["all"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Preservative used in cosmetics"
+  },
+  "butylparaben": {
+    "comedogenic": 0,
+    "goodFor": ["all"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Paraben preservative"
+  },
+  "ethylparaben": {
+    "comedogenic": 0,
+    "goodFor": ["all"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Mild preservative"
+  },
+  "avobenzone": {
+    "comedogenic": 1,
+    "goodFor": ["all"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Chemical sunscreen filter for UVA protection"
+  },
+  "octinoxate": {
+    "comedogenic": 2,
+    "goodFor": ["all"],
+    "avoidFor": ["acne"],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "UVB filter in sunscreens"
+  },
+  "octocrylene": {
+    "comedogenic": 2,
+    "goodFor": ["all"],
+    "avoidFor": ["sensitive"],
+    "irritationRisk": "medium",
+    "rednessTrigger": true,
+    "description": "Stabilizes sunscreen formulas"
+  },
+  "homosalate": {
+    "comedogenic": 2,
+    "goodFor": ["all"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "UVB sunscreen filter"
+  },
+  "octisalate": {
+    "comedogenic": 2,
+    "goodFor": ["all"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Helps improve sunscreen stability"
+  },
+  "tinosorb s": {
+    "comedogenic": 1,
+    "goodFor": ["all"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Advanced broad-spectrum UV filter"
+  },
+  "tinosorb m": {
+    "comedogenic": 1,
+    "goodFor": ["all"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Hybrid sunscreen filter"
+  },
+  "tranexamic acid": {
+    "comedogenic": 0,
+    "goodFor": ["pigmentation"],
+    "avoidFor": ["sensitive"],
+    "irritationRisk": "medium",
+    "rednessTrigger": false,
+    "description": "Helps reduce hyperpigmentation and melasma"
+  },
+  "alpha arbutin": {
+    "comedogenic": 0,
+    "goodFor": ["pigmentation"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Skin brightening agent that reduces dark spots"
+  },
+  "kojic acid": {
+    "comedogenic": 0,
+    "goodFor": ["pigmentation"],
+    "avoidFor": ["sensitive"],
+    "irritationRisk": "medium",
+    "rednessTrigger": true,
+    "description": "Inhibits melanin production for brightening"
+  },
+  "bakuchiol": {
+    "comedogenic": 1,
+    "goodFor": ["aging", "acne"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Natural alternative to retinol with anti-aging benefits"
+  },
+  "ascorbyl glucoside": {
+    "comedogenic": 0,
+    "goodFor": ["pigmentation"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Stable vitamin C derivative for brightening"
+  },
+  "snail secretion filtrate": {
+    "comedogenic": 0,
+    "goodFor": ["dry", "sensitive"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Hydrating and repairing ingredient derived from snail mucin"
+  },
+  "ginseng extract": {
+    "comedogenic": 0,
+    "goodFor": ["aging", "dull"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Antioxidant-rich extract that improves skin vitality"
+  },
+
+  "citric acid": {
+    "comedogenic": 0,
+    "goodFor": ["dull", "pigmentation"],
+    "avoidFor": ["sensitive"],
+    "irritationRisk": "medium",
+    "rednessTrigger": true,
+    "description": "AHA used for exfoliation and pH adjustment"
+  },
+  "tartaric acid": {
+    "comedogenic": 0,
+    "goodFor": ["dull"],
+    "avoidFor": ["sensitive"],
+    "irritationRisk": "medium",
+    "rednessTrigger": true,
+    "description": "AHA that gently exfoliates and brightens skin"
+  },
+  "capryloyl salicylic acid (lha)": {
+    "comedogenic": 0,
+    "goodFor": ["acne", "oily"],
+    "avoidFor": ["sensitive"],
+    "irritationRisk": "medium",
+    "rednessTrigger": true,
+    "description": "Lipid-soluble BHA derivative for pore exfoliation"
+  },
+
+  "sunflower seed oil": {
+    "comedogenic": 0,
+    "goodFor": ["dry", "sensitive"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Lightweight oil rich in fatty acids and vitamin E"
+  },
+  "jojoba esters": {
+    "comedogenic": 2,
+    "goodFor": ["dry"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Wax esters that mimic skin’s natural sebum"
+  },
+  "mineral oil": {
+    "comedogenic": 0,
+    "goodFor": ["dry", "sensitive"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Occlusive moisturizer that prevents water loss"
+  },
+  "marula oil": {
+    "comedogenic": 1,
+    "goodFor": ["dry"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Nutrient-rich oil with antioxidants and fatty acids"
+  },
+  "meadowfoam seed oil": {
+    "comedogenic": 1,
+    "goodFor": ["dry"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Stable oil that locks in moisture"
+  },
+
+  "sodium pca": {
+    "comedogenic": 0,
+    "goodFor": ["dry", "sensitive"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Natural moisturizing factor that attracts water"
+  },
+  "trehalose": {
+    "comedogenic": 0,
+    "goodFor": ["dry"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Sugar-based humectant that retains moisture"
+  },
+  "sorbitol": {
+    "comedogenic": 0,
+    "goodFor": ["dry"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Sugar alcohol used as a humectant"
+  },
+  "hydroxyethyl urea": {
+    "comedogenic": 0,
+    "goodFor": ["dry", "sensitive"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Highly effective hydrating ingredient"
+  },
+
+  "caprylhydroxamic acid": {
+    "comedogenic": 0,
+    "goodFor": ["all"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Mild preservative with antimicrobial properties"
+  },
+  "benzalkonium chloride": {
+    "comedogenic": 0,
+    "goodFor": ["all"],
+    "avoidFor": ["sensitive"],
+    "irritationRisk": "medium",
+    "rednessTrigger": true,
+    "description": "Preservative and disinfectant used in some formulations"
+  },
+
+  "amodimethicone": {
+    "comedogenic": 1,
+    "goodFor": ["dry", "sensitive"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Conditioning silicone that smooths skin and hair"
+  },
+  "phenyl trimethicone": {
+    "comedogenic": 1,
+    "goodFor": ["all"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Silicone that adds shine and smoothness"
+  },
+
+  "decyl glucoside": {
+    "comedogenic": 1,
+    "goodFor": ["sensitive", "oily"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Mild non-ionic surfactant derived from glucose"
+  },
+  "coco glucoside": {
+    "comedogenic": 1,
+    "goodFor": ["sensitive", "oily"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Gentle cleanser derived from coconut and glucose"
+  },
+  "sodium cocoyl isethionate": {
+    "comedogenic": 1,
+    "goodFor": ["oily", "sensitive"],
+    "avoidFor": [],
+    "irritationRisk": "low",
+    "rednessTrigger": false,
+    "description": "Mild surfactant used in gentle cleansers"
   }
 }
