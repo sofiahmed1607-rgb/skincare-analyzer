@@ -1,0 +1,62 @@
+{
+  " derma co 1% hyaluronic sunscreen aqua gel": {
+    "type": "sunscreen",
+    "ingredients": [
+      "water",
+      "glycerin",
+      "zinc oxide",
+      "titanium dioxide",
+      "niacinamide",
+      "dimethicone",
+      "alcohol denat"
+    ]
+  },
+
+  "ponds super light gel moisturizer": {
+    "type": "moisturizer",
+    "ingredients": [
+      "water",
+      "glycerin",
+      "dimethicone",
+      "niacinamide",
+      "fragrance",
+      "carbomer"
+    ]
+  },
+
+  "simple refreshing face wash": {
+    "type": "cleanser",
+    "ingredients": [
+      "water",
+      "glycerin",
+      "panthenol",
+      "allantoin",
+      "citric acid"
+    ]
+  },
+
+  "neutrogena hydro boost water gel": {
+    "type": "moisturizer",
+    "ingredients": [
+      "water",
+      "glycerin",
+      "dimethicone",
+      "sodium hyaluronate",
+      "fragrance"
+    ]
+  },
+  "cetaphil gentle skin cleanser": {
+    "type": "cleanser",
+    "ingredients": ["water", "glycerin", "cetyl alcohol", "propyl paraben"]
+  },
+
+  "minimalist niacinamide 10% serum": {
+    "type": "serum",
+    "ingredients": ["water", "niacinamide", "zinc pca", "glycerin"]
+  },
+
+  "the derma co salicylic acid face wash": {
+    "type": "cleanser",
+    "ingredients": ["water", "salicylic acid", "glycerin", "niacinamide"]
+  }
+}
