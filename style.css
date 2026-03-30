@@ -1,71 +1,105 @@
 body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #fdfbfb, #ebedee);
-    padding: 20px;
-    text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #fff5f8, #ffe3ec);
+  margin: 0;
+}
+
+.container {
+  max-width: 420px;
+  margin: 40px auto;
+  padding: 20px;
 }
 
 h1 {
-    color: #333;
+  text-align: center;
+  color: #d63384;
+  font-size: 28px;
+  font-weight: bold;
 }
 
-textarea {
-    width: 80%;
-    max-width: 500px;
-    height: 120px;
-    padding: 10px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    font-size: 14px;
+.card {
+  background: #ffffff;
+  padding: 18px;
+  margin-bottom: 18px;
+  border-radius: 16px;
+  box-shadow: 0 6px 15px rgba(214, 51, 132, 0.15);
 }
 
-select {
-    padding: 8px;
-    border-radius: 6px;
-    margin-top: 10px;
+textarea, input, select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #f3c6d8;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 button {
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    margin-top: 10px;
-    cursor: pointer;
-    font-size: 16px;
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #d63384, #b82e6f);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 button:hover {
-    background-color: #45a049;
-}
-
-#result {
-    margin-top: 20px;
+  transform: scale(1.03);
+  background: linear-gradient(135deg, #b82e6f, #d63384);
 }
 
 .result-box {
-    background-color: white;
-    padding: 15px;
-    margin: 10px auto;
-    border-radius: 10px;
-    width: 80%;
-    max-width: 500px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    text-align: left;
+  background: #ffffff;
+  padding: 14px;
+  margin-top: 12px;
+  border-radius: 14px;
+  box-shadow: 0 4px 10px rgba(214, 51, 132, 0.12);
 }
 
 .safe {
-    color: green;
-    font-weight: bold;
-}
-
-.caution {
-    color: orange;
-    font-weight: bold;
+  color: green;
+  font-weight: bold;
 }
 
 .danger {
-    color: red;
-    font-weight: bold;
+  color: red;
+  font-weight: bold;
+}
+
+.caution {
+  color: orange;
+  font-weight: bold;
+}
+
+.verdict-good {
+  border-left: 5px solid #28a745;
+}
+
+.verdict-okay {
+  border-left: 5px solid #ffc107;
+}
+
+.verdict-bad {
+  border-left: 5px solid #d63384;  /* dark pink instead of red */
+}
+
+.card, .result-box {
+  transition: all 0.3s ease;
+}
+
+.card, .result-box {
+  background: rgba(255, 255, 255, 0.75);  /* transparent */
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+}
+html, body {
+  height: 100%;
+}
+
+button {
+  box-shadow: 0 4px 12px rgba(214, 51, 132, 0.4);
 }
