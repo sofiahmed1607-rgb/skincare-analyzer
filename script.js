@@ -1,89 +1,67 @@
 let ingredientsDB = {};
+let productsDB = {};
 
-// Load JSON database
+// Load ingredient database
 fetch("ingredients.json")
     .then(response => response.json())
     .then(data => {
         ingredientsDB = data;
     });
 
-// Fake AI function
+// Load products database
+fetch("products.json")
+    .then(res => res.json())
+    .then(data => {
+        productsDB = data;
+    });
+
+
+// Fake AI fallback
 async function getAIAnalysis(ingredient) {
 
     let lower = ingredient.toLowerCase();
 
-    // Oils & butters
     if (lower.includes("oil") || lower.includes("butter")) {
         return `${ingredient}: Emollient ingredient. Can moisturize but may clog pores for acne-prone skin.`;
     }
-
-    // Acids
     else if (lower.includes("acid")) {
-        return `${ingredient}: Exfoliating or pH-adjusting ingredient. Helps skin renewal but may irritate sensitive skin.`;
+        return `${ingredient}: Exfoliating ingredient. Helps skin renewal but may irritate sensitive skin.`;
     }
-
-    // Alcohols
     else if (lower.includes("alcohol")) {
         return `${ingredient}: Can dry out skin and may cause irritation if used in high concentration.`;
     }
-
-    // Glycols (very common in products)
     else if (lower.includes("glycol")) {
-        return `${ingredient}: Humectant that helps retain moisture. Generally safe for most skin types.`;
+        return `${ingredient}: Humectant that helps retain moisture. Generally safe.`;
     }
-
-    // Surfactants / cleansers
-    else if (lower.includes("betaine") || lower.includes("surfactant")) {
-        return `${ingredient}: Mild cleansing agent. Usually safe but may irritate very sensitive skin.`;
-    }
-
-    // Preservatives
-    else if (lower.includes("hexanediol") || lower.includes("phenoxyethanol")) {
-        return `${ingredient}: Preservative used to prevent bacterial growth. Generally safe in small amounts.`;
-    }
-
-    // pH adjusters / stabilizers
-    else if (lower.includes("carbomer") || lower.includes("tromethamine")) {
-        return `${ingredient}: Used to stabilize formulation and adjust pH. Not harmful for skin.`;
-    }
-
-    // Extracts
     else if (lower.includes("extract")) {
         return `${ingredient}: Plant extract. Usually soothing but depends on skin sensitivity.`;
     }
-
-    // Silicones
-    else if (lower.includes("dimethicone")) {
-        return `${ingredient}: Silicone that smooths skin and locks moisture. Non-comedogenic and safe.`;
-    }
-
-    // Default
     else {
-        return `${ingredient}: Common skincare ingredient. Generally safe and used for formulation stability or texture.`;
+        return `${ingredient}: Common skincare ingredient. Generally safe.`;
     }
 }
 
-// MAIN FUNCTION
+
+// MAIN ANALYZER
 async function analyzeIngredients() {
 
     let input = document.getElementById("ingredients").value;
-
-    // split by comma or new line
     let inputIngredients = input.split(/,|\n/);
-
     let skinType = document.getElementById("skinType").value;
 
     let result = "";
+    let totalScore = 0;
+    let goodCount = 0;
+    let badCount = 0;
 
     for (let item of inputIngredients) {
 
         let cleanItem = item.trim().toLowerCase().replace(/\s+/g, " ");
-
         if (!cleanItem) continue;
 
-        // STEP 2: smart matching
         let data = ingredientsDB[cleanItem];
 
+        // smart matching
         if (!data) {
             let keys = Object.keys(ingredientsDB);
             let match = keys.find(key => cleanItem.includes(key));
@@ -94,8 +72,24 @@ async function analyzeIngredients() {
             }
         }
 
-        // STEP 3: show result
         if (data) {
+
+            // ⭐ KEY INGREDIENT BOOST
+            if (cleanItem.includes("niacinamide") && skinType === "oily") {
+                totalScore += 5;
+            }
+
+            if (cleanItem.includes("salicylic acid") && skinType === "oily") {
+                totalScore += 3;
+            }
+
+            if (cleanItem.includes("hyaluronic") && skinType === "dry") {
+                totalScore += 5;
+            }
+
+            // penalties
+            if (data.comedogenic >= 4) totalScore -= 1;
+            if (data.irritationRisk === "high") totalScore -= 1;
 
             let tag = "";
             let className = "";
@@ -103,10 +97,16 @@ async function analyzeIngredients() {
             if (data.avoidFor.includes(skinType)) {
                 tag = "❌ Not suitable";
                 className = "danger";
-            } else if (data.goodFor.includes(skinType)) {
+                totalScore -= 1;
+                badCount++;
+            }
+            else if (data.goodFor.includes(skinType)) {
                 tag = "✅ Good";
                 className = "safe";
-            } else {
+                totalScore += 3;
+                goodCount++;
+            }
+            else {
                 tag = "⚠️ Neutral";
                 className = "caution";
             }
@@ -135,5 +135,66 @@ async function analyzeIngredients() {
         }
     }
 
-    document.getElementById("result").innerHTML = result;
+    // ⭐ BALANCE FIX
+    if (goodCount > badCount) {
+        totalScore += 3;
+    }
+
+    // FINAL VERDICT
+    let verdict = "";
+    let summary = "";
+    let verdictClass = "";
+
+   if (totalScore >= 4) {
+    verdict = "✅ Good Product";
+    summary = "Suitable for your skin type. Most ingredients are beneficial.";
+    verdictClass = "verdict-good";
+}
+else if (totalScore >= 1) {
+    verdict = "⚠️ Okay Product";
+    summary = "Some ingredients are good, but there are minor concerns.";
+    verdictClass = "verdict-okay";
+}
+else {
+    verdict = "❌ Not Suitable";
+    summary = "This product may not suit your skin due to multiple risk factors.";
+    verdictClass = "verdict-bad";
+}
+
+   document.getElementById("result").innerHTML = `
+    <div class="result-box ${verdictClass}">
+        <h2>${verdict}</h2>
+        <p>${summary}</p>
+        <p><b>Score:</b> ${totalScore}</p>
+    </div>
+    ${result}
+`;
+}
+
+
+// PRODUCT ANALYZER
+function analyzeProduct() {
+
+    let productName = document.getElementById("product").value.toLowerCase();
+
+    let productKey = Object.keys(productsDB).find(key => {
+        let keyWords = key.split(" ");
+        let inputWords = productName.split(" ");
+
+        let matchCount = inputWords.filter(word => keyWords.includes(word)).length;
+        return matchCount >= 2;
+    });
+
+    if (!productKey) {
+        document.getElementById("result").innerHTML = `
+        <div class="result-box danger">
+            ❌ Product not found
+        </div>`;
+        return;
+    }
+
+    let ingredients = productsDB[productKey].ingredients;
+
+    document.getElementById("ingredients").value = ingredients.join(", ");
+    analyzeIngredients();
 }
