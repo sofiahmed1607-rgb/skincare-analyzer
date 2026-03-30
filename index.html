@@ -1,31 +1,33 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Skincare Ingredient Analyzer</title>
-    <link rel="stylesheet" href="style.css">
-</head>
 <body>
 
-    <h1>Skincare Ingredient Analyzer</h1>
-<p>Check if your skincare ingredients are safe for your skin type 💖</p>
+<div class="container">
 
-    <textarea id="ingredients" placeholder="Paste ingredients here..."></textarea>
+  <h1>✨ GlowCheck</h1>
 
-    <br><br>
+  <div class="card">
+    <h3>Ingredient Checker</h3>
+    <textarea id="ingredients" placeholder="Enter ingredients..."></textarea>
 
     <select id="skinType">
-    <option value="acne">Acne</option>
-    <option value="oily">Oily</option>
-    <option value="dry">Dry</option>
-    <option value="sensitive">Sensitive</option>
-</select>
+      <option value="oily">Oily</option>
+      <option value="dry">Dry</option>
+      <option value="sensitive">Sensitive</option>
+    </select>
 
-    <button onclick="analyzeIngredients()">Analyze</button>
+    <button onclick="analyzeIngredients()">Analyze Ingredients</button>
+  </div>
 
-    <h2>Result:</h2>
-    <div id="result"></div>
+  <div class="card">
+    <h3>Product Analyzer</h3>
+    <input id="product" placeholder="Enter product name">
 
-    <script src="script.js"></script>
+    <button onclick="analyzeProduct()">Analyze Product</button>
+  </div>
 
+  <div id="result"></div>
+
+</div>
+<script src="script.js"></script>
+
+<link rel="stylesheet" href="style.css">
 </body>
-</html>
