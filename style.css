@@ -103,3 +103,28 @@ html, body {
 button {
   box-shadow: 0 4px 12px rgba(214, 51, 132, 0.4);
 }
+
+.input-group {
+  position: relative;
+}
+
+.suggestions-box {
+  background: white;
+  border-radius: 10px;
+  margin-top: 5px;
+  max-height: 150px;
+  overflow-y: auto;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.suggestion-item {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+}
+
+.suggestion-item:hover {
+  background: #ffe3ec;
+}
+
+
