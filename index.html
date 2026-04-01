@@ -1,33 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GlowCheck</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
 <body>
 
 <div class="container">
 
   <h1>✨ GlowCheck</h1>
+  <p class="tagline">Check if your skincare is safe for your skin 💖</p>
 
+  <!-- INGREDIENT CHECKER -->
   <div class="card">
-    <h3>Ingredient Checker</h3>
-    <textarea id="ingredients" placeholder="Enter ingredients..."></textarea>
+    <h3>🔍 Ingredient Checker</h3>
+
+    <textarea 
+      id="ingredients" 
+      placeholder="Enter ingredients (comma separated)..."
+    ></textarea>
 
     <select id="skinType">
-      <option value="oily">Oily</option>
-      <option value="dry">Dry</option>
-      <option value="sensitive">Sensitive</option>
+      <option value="oily">Oily Skin</option>
+      <option value="dry">Dry Skin</option>
+      <option value="sensitive">Sensitive Skin</option>
     </select>
 
     <button onclick="analyzeIngredients()">Analyze Ingredients</button>
   </div>
 
+  <!-- PRODUCT ANALYZER -->
   <div class="card">
-    <h3>Product Analyzer</h3>
-    <input id="product" placeholder="Enter product name">
+    <h3>🧴 Product Analyzer</h3>
+
+    <div class="input-group">
+      <input 
+        id="product" 
+        placeholder="Search product (e.g. Simple face wash)"
+        oninput="showSuggestions()"
+      >
+
+      <!-- Suggestions Dropdown -->
+      <div id="suggestions" class="suggestions-box"></div>
+    </div>
 
     <button onclick="analyzeProduct()">Analyze Product</button>
   </div>
 
+  <!-- RESULT -->
   <div id="result"></div>
 
 </div>
+
+<!-- JS -->
 <script src="script.js"></script>
 
-<link rel="stylesheet" href="style.css">
 </body>
+</html>
+```
