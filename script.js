@@ -3,51 +3,48 @@ let productsDB = {};
 
 // Load ingredient database
 fetch("ingredients.json")
-    .then(response => response.json())
-    .then(data => {
-        ingredientsDB = data;
-    });
+    .then(res => res.json())
+    .then(data => ingredientsDB = data);
 
-// Load products database
+// Load product database
 fetch("products.json")
     .then(res => res.json())
-    .then(data => {
-        productsDB = data;
-    });
+    .then(data => productsDB = data);
 
 
-// Fake AI fallback
+// AI fallback
 async function getAIAnalysis(ingredient) {
-
     let lower = ingredient.toLowerCase();
 
-    if (lower.includes("oil") || lower.includes("butter")) {
-        return `${ingredient}: Emollient ingredient. Can moisturize but may clog pores for acne-prone skin.`;
+    if (lower.includes("oil")) return `${ingredient}: May clog pores for acne-prone skin.`;
+    if (lower.includes("acid")) return `${ingredient}: Helps exfoliation but may irritate.`;
+    if (lower.includes("alcohol")) return `${ingredient}: Can dry skin.`;
+
+    return `${ingredient}: Generally safe ingredient.`;
+}
+
+
+// 💡 Recommendations
+function getRecommendations(skinType) {
+    if (skinType === "oily") {
+        return ["Niacinamide serum", "Salicylic acid cleanser", "Oil-free gel moisturizer"];
     }
-    else if (lower.includes("acid")) {
-        return `${ingredient}: Exfoliating ingredient. Helps skin renewal but may irritate sensitive skin.`;
+    if (skinType === "dry") {
+        return ["Hyaluronic acid serum", "Ceramide cream", "Gentle cleanser"];
     }
-    else if (lower.includes("alcohol")) {
-        return `${ingredient}: Can dry out skin and may cause irritation if used in high concentration.`;
-    }
-    else if (lower.includes("glycol")) {
-        return `${ingredient}: Humectant that helps retain moisture. Generally safe.`;
-    }
-    else if (lower.includes("extract")) {
-        return `${ingredient}: Plant extract. Usually soothing but depends on skin sensitivity.`;
-    }
-    else {
-        return `${ingredient}: Common skincare ingredient. Generally safe.`;
+    if (skinType === "sensitive") {
+        return ["Centella serum", "Aloe gel", "Fragrance-free products"];
     }
 }
 
 
-// MAIN ANALYZER
+// MAIN FUNCTION
 async function analyzeIngredients() {
 
     let input = document.getElementById("ingredients").value;
-    let inputIngredients = input.split(/,|\n/);
     let skinType = document.getElementById("skinType").value;
+
+    let inputIngredients = input.split(/,|\n/);
 
     let result = "";
     let totalScore = 0;
@@ -56,16 +53,14 @@ async function analyzeIngredients() {
 
     for (let item of inputIngredients) {
 
-        let cleanItem = item.trim().toLowerCase().replace(/\s+/g, " ");
+        let cleanItem = item.trim().toLowerCase();
         if (!cleanItem) continue;
 
         let data = ingredientsDB[cleanItem];
 
         // smart matching
         if (!data) {
-            let keys = Object.keys(ingredientsDB);
-            let match = keys.find(key => cleanItem.includes(key));
-
+            let match = Object.keys(ingredientsDB).find(key => cleanItem.includes(key));
             if (match) {
                 data = ingredientsDB[match];
                 cleanItem = match;
@@ -74,18 +69,10 @@ async function analyzeIngredients() {
 
         if (data) {
 
-            // ⭐ KEY INGREDIENT BOOST
-            if (cleanItem.includes("niacinamide") && skinType === "oily") {
-                totalScore += 5;
-            }
-
-            if (cleanItem.includes("salicylic acid") && skinType === "oily") {
-                totalScore += 3;
-            }
-
-            if (cleanItem.includes("hyaluronic") && skinType === "dry") {
-                totalScore += 5;
-            }
+            // ⭐ boosts
+            if (cleanItem.includes("niacinamide") && skinType === "oily") totalScore += 5;
+            if (cleanItem.includes("salicylic") && skinType === "oily") totalScore += 3;
+            if (cleanItem.includes("hyaluronic") && skinType === "dry") totalScore += 5;
 
             // penalties
             if (data.comedogenic >= 4) totalScore -= 1;
@@ -99,14 +86,12 @@ async function analyzeIngredients() {
                 className = "danger";
                 totalScore -= 1;
                 badCount++;
-            }
-            else if (data.goodFor.includes(skinType)) {
+            } else if (data.goodFor.includes(skinType)) {
                 tag = "✅ Good";
                 className = "safe";
                 totalScore += 3;
                 goodCount++;
-            }
-            else {
+            } else {
                 tag = "⚠️ Neutral";
                 className = "caution";
             }
@@ -118,57 +103,62 @@ async function analyzeIngredients() {
                 Comedogenic: ${data.comedogenic}/5 <br>
                 Irritation: ${data.irritationRisk} <br>
                 ${data.description}
-                ${data.rednessTrigger ? '<br><span style="color:red;">⚠️ May cause redness</span>' : ''}
-            </div>
-            `;
+            </div>`;
+        }
 
-        } else {
-
+        else {
             let aiText = await getAIAnalysis(cleanItem);
 
             result += `
             <div class="result-box">
                 <b>${cleanItem} (AI)</b><br>
                 ${aiText}
-            </div>
-            `;
+            </div>`;
         }
     }
 
-    // ⭐ BALANCE FIX
-    if (goodCount > badCount) {
-        totalScore += 3;
-    }
+    // balance
+    if (goodCount > badCount) totalScore += 2;
 
-    // FINAL VERDICT
+    // verdict
     let verdict = "";
     let summary = "";
     let verdictClass = "";
 
-   if (totalScore >= 4) {
-    verdict = "✅ Good Product";
-    summary = "Suitable for your skin type. Most ingredients are beneficial.";
-    verdictClass = "verdict-good";
-}
-else if (totalScore >= 1) {
-    verdict = "⚠️ Okay Product";
-    summary = "Some ingredients are good, but there are minor concerns.";
-    verdictClass = "verdict-okay";
-}
-else {
-    verdict = "❌ Not Suitable";
-    summary = "This product may not suit your skin due to multiple risk factors.";
-    verdictClass = "verdict-bad";
-}
+    if (totalScore >= 4) {
+        verdict = "✅ Good Product";
+        summary = "Suitable for your skin type.";
+        verdictClass = "verdict-good";
+    } else if (totalScore >= 1) {
+        verdict = "⚠️ Okay Product";
+        summary = "Some concerns present.";
+        verdictClass = "verdict-okay";
+    } else {
+        verdict = "❌ Not Suitable";
+        summary = "Not ideal for your skin.";
+        verdictClass = "verdict-bad";
+    }
 
-   document.getElementById("result").innerHTML = `
+    // recommendations
+    let recs = getRecommendations(skinType);
+
+    document.getElementById("result").innerHTML = `
     <div class="result-box ${verdictClass}">
         <h2>${verdict}</h2>
-        <p>${summary}</p>
         <p><b>Score:</b> ${totalScore}</p>
+        <p>${summary}</p>
     </div>
+
+    <div class="result-box">
+        <h3>💡 Better for your skin</h3>
+        <ul>
+            ${recs.map(r => `<li>${r}</li>`).join("")}
+        </ul>
+    </div>
+
+    <h3>🔍 Ingredient Breakdown</h3>
     ${result}
-`;
+    `;
 }
 
 
@@ -178,18 +168,13 @@ function analyzeProduct() {
     let productName = document.getElementById("product").value.toLowerCase();
 
     let productKey = Object.keys(productsDB).find(key => {
-        let keyWords = key.split(" ");
-        let inputWords = productName.split(" ");
-
-        let matchCount = inputWords.filter(word => keyWords.includes(word)).length;
+        let matchCount = productName.split(" ").filter(w => key.includes(w)).length;
         return matchCount >= 2;
     });
 
     if (!productKey) {
         document.getElementById("result").innerHTML = `
-        <div class="result-box danger">
-            ❌ Product not found
-        </div>`;
+        <div class="result-box danger">❌ Product not found</div>`;
         return;
     }
 
@@ -197,4 +182,35 @@ function analyzeProduct() {
 
     document.getElementById("ingredients").value = ingredients.join(", ");
     analyzeIngredients();
+}
+
+function showSuggestions() {
+    let input = document.getElementById("product").value.toLowerCase();
+    let suggestionsBox = document.getElementById("suggestions");
+
+    if (!input) {
+        suggestionsBox.innerHTML = "";
+        return;
+    }
+
+    let matches = Object.keys(productsDB)
+        .filter(product => product.includes(input))
+        .slice(0, 5);
+
+    let html = "";
+
+    matches.forEach(product => {
+        html += `<div class="suggestion-item" onclick="selectProduct('${product}')">
+                    ${product}
+                 </div>`;
+    });
+
+    suggestionsBox.innerHTML = html;
+}
+
+function selectProduct(name) {
+    document.getElementById("product").value = name;
+    document.getElementById("suggestions").innerHTML = "";
+
+    analyzeProduct(); // 🔥 auto analyze
 }
