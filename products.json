@@ -1,62 +1,243 @@
 {
-  " derma co 1% hyaluronic sunscreen aqua gel": {
-    "type": "sunscreen",
-    "ingredients": [
-      "water",
-      "glycerin",
-      "zinc oxide",
-      "titanium dioxide",
-      "niacinamide",
-      "dimethicone",
-      "alcohol denat"
-    ]
-  },
+  "minimalist 10% niacinamide serum": { "ingredients": ["niacinamide", "zinc pca", "glycerin"] },
+  "minimalist 2% salicylic acid serum": { "ingredients": ["salicylic acid", "glycerin"] },
+  "minimalist hyaluronic acid serum": { "ingredients": ["hyaluronic acid", "panthenol"] },
+  "minimalist vitamin c 10% serum": { "ingredients": ["ascorbic acid", "vitamin e"] },
+  "minimalist alpha arbutin serum": { "ingredients": ["alpha arbutin", "glycerin"] },
 
-  "ponds super light gel moisturizer": {
-    "type": "moisturizer",
-    "ingredients": [
-      "water",
-      "glycerin",
-      "dimethicone",
-      "niacinamide",
-      "fragrance",
-      "carbomer"
-    ]
-  },
+  "derma co 1% salicylic acid face wash": { "ingredients": ["salicylic acid", "glycerin", "niacinamide"] },
+  "derma co 10% niacinamide serum": { "ingredients": ["niacinamide", "zinc pca"] },
+  "derma co ceramide moisturizer": { "ingredients": ["ceramide", "glycerin"] },
+  "derma co vitamin c serum": { "ingredients": ["vitamin c", "ferulic acid"] },
+  "derma co sunscreen spf 50": { "ingredients": ["zinc oxide", "titanium dioxide"] },
 
-  "simple refreshing face wash": {
-    "type": "cleanser",
-    "ingredients": [
-      "water",
-      "glycerin",
-      "panthenol",
-      "allantoin",
-      "citric acid"
-    ]
-  },
+  "ponds super light gel oil free moisturizer": { "ingredients": ["glycerin", "niacinamide", "dimethicone"] },
+  "ponds bright beauty serum": { "ingredients": ["niacinamide", "vitamin c"] },
+  "ponds charcoal deep cleanse face wash": { "ingredients": ["charcoal", "sodium laureth sulfate"] },
+  "ponds hydrating aloe gel": { "ingredients": ["aloe vera", "glycerin"] },
+  "ponds sunscreen spf 30": { "ingredients": ["octinoxate", "avobenzone"] },
 
-  "neutrogena hydro boost water gel": {
-    "type": "moisturizer",
-    "ingredients": [
-      "water",
-      "glycerin",
-      "dimethicone",
-      "sodium hyaluronate",
-      "fragrance"
-    ]
-  },
-  "cetaphil gentle skin cleanser": {
-    "type": "cleanser",
-    "ingredients": ["water", "glycerin", "cetyl alcohol", "propyl paraben"]
-  },
+  "neutrogena hydro boost water gel": { "ingredients": ["hyaluronic acid", "glycerin"] },
+  "neutrogena oil free acne wash": { "ingredients": ["salicylic acid"] },
+  "neutrogena ultra sheer sunscreen spf 50": { "ingredients": ["avobenzone", "octocrylene"] },
+  "neutrogena deep clean face wash": { "ingredients": ["glycerin", "sodium laureth sulfate"] },
+  "neutrogena alcohol free toner": { "ingredients": ["water", "glycerin"] },
 
-  "minimalist niacinamide 10% serum": {
-    "type": "serum",
-    "ingredients": ["water", "niacinamide", "zinc pca", "glycerin"]
-  },
+  "cetaphil gentle skin cleanser": { "ingredients": ["water", "cetyl alcohol"] },
+  "cetaphil moisturizing cream": { "ingredients": ["glycerin", "ceramide"] },
+  "cetaphil oily skin cleanser": { "ingredients": ["glycerin", "niacinamide"] },
+  "cetaphil daily advance lotion": { "ingredients": ["glycerin", "panthenol"] },
+  "cetaphil sunscreen spf 50": { "ingredients": ["zinc oxide"] },
 
-  "the derma co salicylic acid face wash": {
-    "type": "cleanser",
-    "ingredients": ["water", "salicylic acid", "glycerin", "niacinamide"]
-  }
+  "simple refreshing facial wash": { "ingredients": ["glycerin", "panthenol", "allantoin"] },
+  "simple hydrating light moisturizer": { "ingredients": ["glycerin", "vitamin e"] },
+  "simple soothing toner": { "ingredients": ["witch hazel", "allantoin"] },
+  "simple micellar cleansing water": { "ingredients": ["water", "glycerin"] },
+  "simple niacinamide booster serum": { "ingredients": ["niacinamide"] },
+
+  "cosrx low ph good morning gel cleanser": { "ingredients": ["tea tree oil", "betaine"] },
+  "cosrx advanced snail 96 mucin essence": { "ingredients": ["snail secretion filtrate"] },
+  "cosrx aha bha clarifying toner": { "ingredients": ["glycolic acid", "salicylic acid"] },
+  "cosrx oil free ultra moisturizing lotion": { "ingredients": ["glycerin"] },
+  "cosrx aloe soothing sunscreen": { "ingredients": ["aloe vera", "zinc oxide"] },
+
+  "anua heartleaf 77 soothing toner": { "ingredients": ["heartleaf extract", "glycerin"] },
+  "anua heartleaf pore control cleansing oil": { "ingredients": ["plant oils"] },
+  "anua calming serum": { "ingredients": ["centella asiatica"] },
+  "anua daily sunscreen": { "ingredients": ["zinc oxide"] },
+  "anua soothing moisturizer": { "ingredients": ["glycerin"] },
+
+  "round lab 1025 dokdo toner": { "ingredients": ["deep sea water", "panthenol"] },
+  "round lab mugwort calming cleanser": { "ingredients": ["mugwort extract"] },
+  "round lab birch juice moisturizing cream": { "ingredients": ["birch sap"] },
+  "round lab sunscreen spf 50": { "ingredients": ["zinc oxide"] },
+  "round lab hydrating serum": { "ingredients": ["glycerin"] },
+
+  "beauty of joseon relief sun rice probiotic": { "ingredients": ["rice extract", "niacinamide"] },
+  "beauty of joseon glow serum propolis niacinamide": { "ingredients": ["propolis", "niacinamide"] },
+  "beauty of joseon ginseng essence water": { "ingredients": ["ginseng extract"] },
+  "beauty of joseon dynasty cream": { "ingredients": ["ceramide"] },
+  "beauty of joseon cleansing balm": { "ingredients": ["plant oils"] },
+
+  "laneige water sleeping mask": { "ingredients": ["glycerin", "hyaluronic acid"] },
+  "laneige cream skin toner": { "ingredients": ["glycerin"] },
+  "laneige lip sleeping mask berry": { "ingredients": ["shea butter"] },
+  "laneige water bank moisturizer": { "ingredients": ["ceramide"] },
+  "laneige foam cleanser": { "ingredients": ["glycerin"] }
+
+  ,
+"minimalist 5% niacinamide body lotion": { "ingredients": ["niacinamide", "glycerin"] },
+"minimalist spf 50 sunscreen": { "ingredients": ["zinc oxide", "titanium dioxide"] },
+"minimalist oat gentle cleanser": { "ingredients": ["oat extract", "glycerin"] },
+"minimalist ceramide moisturizer": { "ingredients": ["ceramide", "glycerin"] },
+"minimalist pha toner": { "ingredients": ["gluconolactone", "glycerin"] },
+
+"derma co 2% salicylic acid face serum": { "ingredients": ["salicylic acid", "niacinamide"] },
+"derma co hyaluronic sunscreen aqua gel": { "ingredients": ["hyaluronic acid", "zinc oxide"] },
+"derma co 1% hyaluronic sunscreen": { "ingredients": ["hyaluronic acid", "octocrylene"] },
+"derma co kojic acid cream": { "ingredients": ["kojic acid", "niacinamide"] },
+"derma co ceramide + ha moisturizer": { "ingredients": ["ceramide", "hyaluronic acid"] },
+
+"ponds vitamin c brightening gel cream": { "ingredients": ["vitamin c", "glycerin"] },
+"ponds hydrating gel moisturizer": { "ingredients": ["glycerin", "aloe vera"] },
+"ponds light gel oil control": { "ingredients": ["niacinamide", "dimethicone"] },
+"ponds anti pollution face wash": { "ingredients": ["charcoal", "glycerin"] },
+"ponds tone up milk cream": { "ingredients": ["niacinamide", "fragrance"] },
+
+"neutrogena bright boost gel cream": { "ingredients": ["neoglucosamine", "glycerin"] },
+"neutrogena rapid wrinkle repair cream": { "ingredients": ["retinol", "glycerin"] },
+"neutrogena clear pore cleanser mask": { "ingredients": ["benzoyl peroxide"] },
+"neutrogena hydro boost cleanser": { "ingredients": ["hyaluronic acid"] },
+"neutrogena ultra gentle cleanser": { "ingredients": ["glycerin"] },
+
+"cetaphil bright healthy radiance serum": { "ingredients": ["niacinamide"] },
+"cetaphil pro oil control moisturizer": { "ingredients": ["zinc", "glycerin"] },
+"cetaphil hydrating foaming cream cleanser": { "ingredients": ["glycerin"] },
+"cetaphil gentle exfoliating cleanser": { "ingredients": ["lactic acid"] },
+"cetaphil moisturizing lotion": { "ingredients": ["glycerin", "panthenol"] },
+
+"simple kind to skin moisturizing wash": { "ingredients": ["glycerin", "vitamin e"] },
+"simple water boost gel cream": { "ingredients": ["glycerin"] },
+"simple daily detox toner": { "ingredients": ["witch hazel"] },
+"simple soothing facial toner": { "ingredients": ["allantoin"] },
+"simple hydrating booster": { "ingredients": ["hyaluronic acid"] },
+
+"cosrx bha blackhead power liquid": { "ingredients": ["salicylic acid"] },
+"cosrx advanced snail 92 cream": { "ingredients": ["snail mucin"] },
+"cosrx galactomyces essence": { "ingredients": ["fermented extract"] },
+"cosrx centella blemish cream": { "ingredients": ["centella asiatica"] },
+"cosrx oil free moisturizer": { "ingredients": ["glycerin"] },
+
+"anua heartleaf calming cream": { "ingredients": ["heartleaf extract"] },
+"anua heartleaf cleansing foam": { "ingredients": ["glycerin"] },
+"anua soothing ampoule": { "ingredients": ["centella"] },
+"anua mild toner": { "ingredients": ["glycerin"] },
+"anua sunscreen spf 50": { "ingredients": ["zinc oxide"] },
+
+"round lab birch juice sunscreen": { "ingredients": ["birch sap", "zinc oxide"] },
+"round lab mugwort toner": { "ingredients": ["mugwort extract"] },
+"round lab dokdo cleanser": { "ingredients": ["glycerin"] },
+"round lab calming cream": { "ingredients": ["centella"] },
+"round lab hydrating ampoule": { "ingredients": ["hyaluronic acid"] },
+
+"beauty of joseon green plum cleanser": { "ingredients": ["plum extract"] },
+"beauty of joseon calming serum green tea": { "ingredients": ["green tea"] },
+"beauty of joseon eye serum retinal": { "ingredients": ["retinal"] },
+"beauty of joseon glow deep serum rice": { "ingredients": ["rice extract"] },
+"beauty of joseon sunscreen stick": { "ingredients": ["zinc oxide"] },
+
+"lakme peach milk moisturizer": { "ingredients": ["glycerin", "vitamin e", "fragrance"] },
+"lakme absolute perfect radiance serum": { "ingredients": ["niacinamide", "glycerin"] },
+"lakme sun expert spf 50 sunscreen": { "ingredients": ["octinoxate", "avobenzone"] },
+"lakme blush and glow face wash": { "ingredients": ["glycerin", "fruit extract"] },
+"lakme 9to5 matte moisturizer": { "ingredients": ["dimethicone", "glycerin"] },
+
+"wow vitamin c face wash": { "ingredients": ["vitamin c", "glycerin"] },
+"wow aloe vera gel": { "ingredients": ["aloe vera"] },
+"wow sunscreen spf 50": { "ingredients": ["zinc oxide"] },
+"wow hyaluronic acid serum": { "ingredients": ["hyaluronic acid"] },
+"wow ubtan face wash": { "ingredients": ["turmeric", "saffron"] },
+
+"plum green tea oil free moisturizer": { "ingredients": ["green tea", "glycerin"] },
+"plum 10% niacinamide serum": { "ingredients": ["niacinamide"] },
+"plum vitamin c serum": { "ingredients": ["vitamin c"] },
+"plum green tea face wash": { "ingredients": ["glycolic acid", "green tea"] },
+"plum sunscreen spf 35": { "ingredients": ["zinc oxide"] },
+
+"mamaearth ubtan face wash": { "ingredients": ["turmeric", "glycerin"] },
+"mamaearth vitamin c serum": { "ingredients": ["vitamin c"] },
+"mamaearth oil free moisturizer": { "ingredients": ["glycerin"] },
+"mamaearth sunscreen spf 50": { "ingredients": ["zinc oxide"] },
+"mamaearth tea tree face wash": { "ingredients": ["tea tree oil"] },
+
+"biotique morning nectar moisturizer": { "ingredients": ["honey", "glycerin"] },
+"biotique cucumber toner": { "ingredients": ["cucumber extract"] },
+"biotique neem face wash": { "ingredients": ["neem", "turmeric"] },
+"biotique sunscreen spf 50": { "ingredients": ["zinc oxide"] },
+"biotique bio papaya scrub": { "ingredients": ["papaya extract"] },
+
+"himalaya neem face wash": { "ingredients": ["neem", "turmeric"] },
+"himalaya aloe vera gel": { "ingredients": ["aloe vera"] },
+"himalaya nourishing cream": { "ingredients": ["aloe vera", "glycerin"] },
+"himalaya sunscreen spf 30": { "ingredients": ["zinc oxide"] },
+"himalaya toner": { "ingredients": ["cucumber"] },
+
+"khadi natural rose water toner": { "ingredients": ["rose water"] },
+"khadi aloe vera gel": { "ingredients": ["aloe vera"] },
+"khadi herbal face wash": { "ingredients": ["plant extract"] },
+"khadi sandalwood cream": { "ingredients": ["sandalwood"] },
+"khadi neem face pack": { "ingredients": ["neem"] },
+
+"dot and key vitamin c serum": { "ingredients": ["vitamin c"] },
+"dot and key cica calming gel": { "ingredients": ["centella asiatica"] },
+"dot and key sunscreen spf 50": { "ingredients": ["zinc oxide"] },
+"dot and key moisturizer": { "ingredients": ["glycerin"] },
+"dot and key face wash": { "ingredients": ["glycerin"] },
+
+"requil oil free moisturizer": { "ingredients": ["ceramide", "glycerin"] },
+"requil sunscreen ultra matte": { "ingredients": ["zinc oxide"] },
+"requil aha face wash": { "ingredients": ["glycolic acid"] },
+"requil ceramide cream": { "ingredients": ["ceramide"] },
+"requil toner": { "ingredients": ["niacinamide"] }
+
+,
+"lakme absolute argan oil serum": { "ingredients": ["argan oil", "vitamin e"] },
+"lakme absolute hydra pro gel": { "ingredients": ["hyaluronic acid", "glycerin"] },
+"lakme sun expert tinted sunscreen": { "ingredients": ["zinc oxide", "iron oxides"] },
+"lakme micellar water": { "ingredients": ["water", "glycerin"] },
+"lakme absolute pore fix toner": { "ingredients": ["niacinamide"] },
+
+"wow ubtan face scrub": { "ingredients": ["turmeric", "walnut shell"] },
+"wow charcoal face wash": { "ingredients": ["charcoal", "glycerin"] },
+"wow anti acne face serum": { "ingredients": ["salicylic acid"] },
+"wow vitamin c gel": { "ingredients": ["vitamin c", "aloe vera"] },
+"wow skin science moisturizer": { "ingredients": ["glycerin"] },
+
+"plum e-luminence deep moisturizer": { "ingredients": ["glycerin", "vitamin e"] },
+"plum hello aloe calming gel": { "ingredients": ["aloe vera"] },
+"plum green tea night gel": { "ingredients": ["green tea", "glycolic acid"] },
+"plum 2% salicylic acid toner": { "ingredients": ["salicylic acid"] },
+"plum bright years under eye cream": { "ingredients": ["vitamin c"] },
+
+"mamaearth rice water face wash": { "ingredients": ["rice water"] },
+"mamaearth charcoal face wash": { "ingredients": ["charcoal"] },
+"mamaearth retinol night cream": { "ingredients": ["retinol"] },
+"mamaearth hyaluronic acid serum": { "ingredients": ["hyaluronic acid"] },
+"mamaearth vitamin c face cream": { "ingredients": ["vitamin c"] },
+
+"biotique aloe vera sunscreen": { "ingredients": ["aloe vera", "zinc oxide"] },
+"biotique saffron dew cream": { "ingredients": ["saffron", "glycerin"] },
+"biotique clove oil acne control": { "ingredients": ["clove oil"] },
+"biotique bio honey gel cleanser": { "ingredients": ["honey"] },
+"biotique tea tree toner": { "ingredients": ["tea tree oil"] },
+
+"himalaya oil clear lemon face wash": { "ingredients": ["lemon extract"] },
+"himalaya clear complexion cream": { "ingredients": ["herbal extract"] },
+"himalaya anti wrinkle cream": { "ingredients": ["aloe vera"] },
+"himalaya purifying neem scrub": { "ingredients": ["neem", "walnut shell"] },
+"himalaya moisturizing aloe gel": { "ingredients": ["aloe vera"] },
+
+"khadi rose and honey moisturizer": { "ingredients": ["rose", "honey"] },
+"khadi neem and tulsi face wash": { "ingredients": ["neem", "tulsi"] },
+"khadi sandalwood face pack": { "ingredients": ["sandalwood"] },
+"khadi herbal sunscreen": { "ingredients": ["zinc oxide"] },
+"khadi aloe vera toner": { "ingredients": ["aloe vera"] },
+
+"dot and key watermelon cooling gel": { "ingredients": ["watermelon extract"] },
+"dot and key niacinamide serum": { "ingredients": ["niacinamide"] },
+"dot and key aha exfoliating toner": { "ingredients": ["glycolic acid"] },
+"dot and key retinol night cream": { "ingredients": ["retinol"] },
+"dot and key hydrating face wash": { "ingredients": ["glycerin"] },
+
+"requil aha bha exfoliating face wash": { "ingredients": ["glycolic acid", "salicylic acid"] },
+"requil sunscreen dry touch": { "ingredients": ["zinc oxide"] },
+"requil vitamin c serum": { "ingredients": ["vitamin c"] },
+"requil hyaluronic acid moisturizer": { "ingredients": ["hyaluronic acid"] },
+"requil oil control face wash": { "ingredients": ["niacinamide"] },
+
+"mcaffeine coffee face wash": { "ingredients": ["caffeine"] },
+"mcaffeine naked detox green tea face wash": { "ingredients": ["green tea"] },
+"mcaffeine coffee body scrub": { "ingredients": ["coffee", "sugar"] },
+"mcaffeine coffee moisturizer": { "ingredients": ["caffeine"] },
+"mcaffeine sunscreen spf 50": { "ingredients": ["zinc oxide"] }
 }
